@@ -29,7 +29,7 @@ export default function Home() {
 
       <section id="home" className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-14 lg:gap-0 items-center justify-center relative pt-36 pb-16 px-8 lg:px-20">
 
-        <Image className="absolute" src={'/Vector.png'} width={60} height={60} />
+        <Image className="absolute" src={'/Vector.png'} alt="hero-image" width={60} height={60} />
 
         <div className="flex-1">
           <h1 className="text-5xl font-bold text-center lg:text-start">Majid Oladepo!</h1>
@@ -132,72 +132,72 @@ export default function Home() {
 
               <div className="flex flex-row items-center justify-center flex-wrap gap-9 mt-8">
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/html.png'} height={50} width={50} />
+                  <Image src={'/html.png'} alt="html" height={50} width={50} />
                   <p className="font-bold text-xs">HTML</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/css.png'} height={50} width={50} />
+                  <Image src={'/css.png'} alt="css" height={50} width={50} />
                   <p className="font-bold text-xs">CSS</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/js.png'} height={50} width={50} />
+                  <Image src={'/js.png'} alt="js" height={50} width={50} />
                   <p className="font-bold text-xs">JAVASCRIPT</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/bootstrap.png'} height={50} width={50} />
+                  <Image src={'/bootstrap.png'} alt="bootstrap" height={50} width={50} />
                   <p className="font-bold text-xs">BOOTSTRAP</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/tailwind.png'} height={50} width={50} />
+                  <Image src={'/tailwind.png'} alt="tailwind" height={50} width={50} />
                   <p className="font-bold text-xs">TAILWIND</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/react.png'} height={50} width={50} />
+                  <Image src={'/react.png'} alt="react" height={50} width={50} />
                   <p className="font-bold text-xs">REACT</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/next.png'} height={50} width={50} />
+                  <Image src={'/next.png'} alt="next" height={50} width={50} />
                   <p className="font-bold text-xs">NEXT</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/ts.png'} height={50} width={50} />
+                  <Image src={'/ts.png'} alt="ts" height={50} width={50} />
                   <p className="font-bold text-xs">TYPESCRIPT</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/node.png'} height={50} width={50} />
+                  <Image src={'/node.png'} alt="node" height={50} width={50} />
                   <p className="font-bold text-xs">NODE</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/express.png'} height={50} width={50} />
+                  <Image src={'/express.png'} alt="express" height={50} width={50} />
                   <p className="font-bold text-xs">EXPRESS</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/mongodb.png'} height={50} width={50} />
+                  <Image src={'/mongodb.png'} alt="mongo" height={50} width={50} />
                   <p className="font-bold text-xs">MONGO DB</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/mysql.png'} height={50} width={50} />
+                  <Image src={'/mysql.png'} alt="mysql" height={50} width={50} />
                   <p className="font-bold text-xs">MYSQL</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/git.png'} height={50} width={50} />
+                  <Image src={'/git.png'} alt="git" height={50} width={50} />
                   <p className="font-bold text-xs">GIT</p>
                 </div>
 
                 <div className="inline-flex flex-col gap-2 items-center justify-center">
-                  <Image src={'/figma.png'} height={50} width={50} />
+                  <Image src={'/figma.png'} alt="figma" height={50} width={50} />
                   <p className="font-bold text-xs">FIGMA</p>
                 </div>
               </div>

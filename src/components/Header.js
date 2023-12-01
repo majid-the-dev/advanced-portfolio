@@ -42,7 +42,7 @@ const Header = () => {
     return () => {
       document.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  });
 
   const logo = '< Majid Oladepo />';
 

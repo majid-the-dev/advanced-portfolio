@@ -9,7 +9,7 @@ const ProjectCard = ({ id, image, heading, paragraph, tools, url, repo }) => {
     return (
         <div className="bg-primary max-w-sm rounded-md shadow-md px-6 pt-5 pb-10">
             <div className="relative h-44">
-                <Image src={'/avatar.jpeg'} className="rounded-md" layout={'fill'} objectFit={'cover'} />
+                <Image src={'/avatar.jpeg'} alt="project-image" className="rounded-md" layout={'fill'} objectFit={'cover'} />
             </div>
 
             <h1 className="font-bold text-lg mt-4">{heading}</h1>
