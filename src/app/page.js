@@ -100,7 +100,7 @@ export default function Home() {
 
               <div>
                 <p className="leading-9 max-w-lg relative">
-                  With <span className="font-bold">2 years</span> of experience, my journey into the world of software development started when I realized how much I loved tinkering with code to solve <span className="font-bold">real-world problems</span>. When I'm not coding, you can usually find me exploring for new experiences and perspectives that can inform my work and help me grow both personally and professionally.
+                  With <span className="font-bold">2 years</span> of experience, my journey into the world of software development started when I realized how much I loved tinkering with code to solve <span className="font-bold">real-world problems</span>. When I&apos;m not coding, you can usually find me exploring for new experiences and perspectives that can inform my work and help me grow both personally and professionally.
                   <span>
                     <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-20 right-0" width={120} height={120} />
                   </span>
@@ -276,7 +276,7 @@ export default function Home() {
 
               <div>
                 <p className="leading-9 max-w-lg relative">
-                  I share my <span className="font-bold">insights</span> and <span className="font-bold">experiences</span> as a software developer, as well as <span className="font-bold">tips</span> and <span className="font-bold">tutorials</span> for those who are just starting out in the field. I'm excited to share knowledge and contribute my own perspectives to the conversation.
+                  I share my <span className="font-bold">insights</span> and <span className="font-bold">experiences</span> as a software developer, as well as <span className="font-bold">tips</span> and <span className="font-bold">tutorials</span> for those who are just starting out in the field. I&apos;m excited to share knowledge and contribute my own perspectives to the conversation.
                   <span>
                     <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-20 right-0" width={120} height={120} />
                   </span>
@@ -354,9 +354,9 @@ export default function Home() {
 
               <div>
                 <p className="leading-9 max-w-lg relative">
-                  Excited about your <span className="font-bold">next big project</span> and ready to turn your ideas into reality? Reach out, let's start the <span className="font-bold">conversation</span>.
+                  Excited about your <span className="font-bold">next big project</span> and ready to turn your ideas into reality? Reach out, let&apos;s start the <span className="font-bold">conversation</span>.
                   <br />
-                  Based in Lagos, I'm ready to collaborate <span className="font-bold">locally</span> or <span className="font-bold">virtually</span>, bringing a blend of creativity and technical expertise to every project.
+                  Based in Lagos, I&apos;m ready to collaborate <span className="font-bold">locally</span> or <span className="font-bold">virtually</span>, bringing a blend of creativity and technical expertise to every project.
                   <span>
                     <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-14 right-0" width={120} height={120} />
                   </span>
