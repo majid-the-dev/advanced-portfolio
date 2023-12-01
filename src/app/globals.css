@@ -2,26 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-primary
+}
+
+.hero {
+  @apply grid;
+  grid-template-columns: .4fr .6fr;
+}
+
+.button-primary {
+  @apply bg-black text-primary ring-4 ring-red-400/25 py-3
+}
+
+.absolute-item {
+  position: absolute;
+  top: 57%;
+  right: 3%;
+  transform: translateY(-50%);
+}
+
+.absolute-text {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+}
+
+.card-outer {
+  border: 2px solid rgb(207, 207, 207) ;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+label {
+  @apply text-sm mb-2
+}
+
+input, 
+textarea {
+  @apply  bg-black outline-none ring-1 ring-gray-700 rounded-sm px-2 py-2
+}
+
+input:focus, 
+input:active, 
+textarea:focus {
+  @apply  bg-black ring-1 ring-red-400 rounded-sm px-2 py-2
+}
+
+.active {
+  @apply font-bold
 }
