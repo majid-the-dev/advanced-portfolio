@@ -32,7 +32,7 @@ export default function Home() {
         <Image className="absolute" src={'/Vector.png'} alt="hero-image" width={60} height={60} />
 
         <div className="flex-1">
-          <h1 className="text-5xl font-bold text-center lg:text-start">Majid Oladepo!</h1>
+          <h1 className="text-5xl font-bold text-center lg:text-start leading-[1.2]">Majid Oladepo!</h1>
 
           <div className="flex gap-2 items-start justify-start max-w-lg mx-auto lg:max-w-none mt-5 relative">
 
@@ -89,7 +89,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-20 lg:gap-0 lg:flex-row items-center mt-6 lg:mt-10">
 
-          <div className="flex-1 flex items-center justify-center">
+          <div className="flex-1 hidden lg:flex items-center justify-center">
             <Image src={'/Vector-8.png'} alt="vector" className="" width={300} height={300} />
           </div>
 
@@ -291,7 +291,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex-1 flex items-center justify-center">
+          <div className="flex-1 hidden lg:flex items-center justify-center">
             <Image src={'/Vector-7.png'} alt="vector" className="" width={300} height={300} />
           </div>
 
@@ -406,7 +406,7 @@ export default function Home() {
 
       </section>
 
-      <section className="bg-black text-primary mx-auto px-8 lg:px-20 py-10 relative flex justify-between scroll-m-10">
+      <section className="bg-black text-primary mx-auto px-8 lg:px-20 py-10 relative flex flex-col md:flex-row items-center justify-between gap-4 scroll-m-10">
         <div className="font-bold">
           <Link href={'/'}>{logo}</Link>
         </div>
