@@ -20,7 +20,7 @@ const ProjectCard = ({ id, image, heading, paragraph, tools, url, repo }) => {
 
             <div className="mt-3 flex flex-wrap gap-y-3 gap-x-2">
                 {tools.map(tool => (
-                <div className="inline-flex items-center px-3 py-0.5 text-sm rounded-full bg-red-400/25 whitespace-nowrap">
+                <div key={tool} className="inline-flex items-center px-3 py-0.5 text-sm rounded-full bg-red-400/25 whitespace-nowrap">
                     {tool}
                 </div>
                 ))}
