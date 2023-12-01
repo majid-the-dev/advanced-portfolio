@@ -43,7 +43,7 @@ export default function Home() {
               I translate complex concepts into <span className="font-bold">innovative solutions</span> with <span className="font-bold">engaging user experiences</span>.
             </p>
 
-            <Image src={'/Vector-2.png'} className="absolute -bottom-20" width={50} height={50} />
+            <Image src={'/Vector-2.png'} alt="vector" className="absolute -bottom-20" width={50} height={50} />
 
           </div>
 
@@ -57,7 +57,7 @@ export default function Home() {
 
         <div className="flex-1 flex items-center justify-center h-full">
           <div className="flex items-center justify-center relative h-full border-4 border-black p-2">
-            <Image src={'/avatar.jpeg'} width={300} height={300} />
+            <Image src={'/avatar.jpeg'} alt="avatar" width={300} height={300} />
           </div>
         </div>
 
@@ -90,7 +90,7 @@ export default function Home() {
         <div className="flex flex-col gap-20 lg:gap-0 lg:flex-row items-center mt-6 lg:mt-10">
 
           <div className="flex-1 flex items-center justify-center">
-            <Image src={'/Vector-8.png'} className="" width={300} height={300} />
+            <Image src={'/Vector-8.png'} alt="vector" className="" width={300} height={300} />
           </div>
 
           <div className="flex-1 -order-1 lg:order-1">
@@ -100,12 +100,9 @@ export default function Home() {
 
               <div>
                 <p className="leading-9 max-w-lg relative">
-                  With <span className="font-bold">2 years</span> of experience, my journey into the world of software development started when I realized how much I loved tinkering
-                  with code to solve <span className="font-bold">real-world problems</span>. When I'm not coding,
-                  you can usually find me exploring for new experiences
-                  and perspectives that can inform my work and help me grow both personally and professionally.
+                  With <span className="font-bold">2 years</span> of experience, my journey into the world of software development started when I realized how much I loved tinkering with code to solve <span className="font-bold">real-world problems</span>. When I'm not coding, you can usually find me exploring for new experiences and perspectives that can inform my work and help me grow both personally and professionally.
                   <span>
-                    <Image src={'/Vector-6.png'} className="absolute -bottom-20 right-0" width={120} height={120} />
+                    <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-20 right-0" width={120} height={120} />
                   </span>
                 </p>
                 <button type="button" onClick={() => setShowModal(true)} className="button-primary rounded-md flex gap-2 items-center px-4 py-2 mt-6">
@@ -279,11 +276,9 @@ export default function Home() {
 
               <div>
                 <p className="leading-9 max-w-lg relative">
-                  I share my <span className="font-bold">insights</span> and <span className="font-bold">experiences</span> as a software developer, as well as <span className="font-bold">tips</span> and <span className="font-bold">tutorials </span>
-                  for those who are just starting out in the field. I'm excited to share knowledge and
-                  contribute my own perspectives to the conversation.
+                  I share my <span className="font-bold">insights</span> and <span className="font-bold">experiences</span> as a software developer, as well as <span className="font-bold">tips</span> and <span className="font-bold">tutorials</span> for those who are just starting out in the field. I'm excited to share knowledge and contribute my own perspectives to the conversation.
                   <span>
-                    <Image src={'/Vector-6.png'} className="absolute -bottom-20 right-0" width={120} height={120} />
+                    <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-20 right-0" width={120} height={120} />
                   </span>
                 </p>
                 <button type="button" className="button-primary rounded-md flex gap-2 items-center px-4 py-2 mt-6">
@@ -297,7 +292,7 @@ export default function Home() {
           </div>
 
           <div className="flex-1 flex items-center justify-center">
-            <Image src={'/Vector-7.png'} className="" width={300} height={300} />
+            <Image src={'/Vector-7.png'} alt="vector" className="" width={300} height={300} />
           </div>
 
         </div>
@@ -359,13 +354,11 @@ export default function Home() {
 
               <div>
                 <p className="leading-9 max-w-lg relative">
-                  Excited about your <span className="font-bold">next big project</span> and ready to turn
-                  your ideas into reality? Reach out, let's start the <span className="font-bold">conversation</span>.
+                  Excited about your <span className="font-bold">next big project</span> and ready to turn your ideas into reality? Reach out, let's start the <span className="font-bold">conversation</span>.
                   <br />
-                  Based in Lagos, I'm ready to collaborate <span className="font-bold">locally</span> or <span className="font-bold">virtually</span>, bringing a blend of
-                  creativity and technical expertise to every project.
+                  Based in Lagos, I'm ready to collaborate <span className="font-bold">locally</span> or <span className="font-bold">virtually</span>, bringing a blend of creativity and technical expertise to every project.
                   <span>
-                    <Image src={'/Vector-6.png'} className="absolute -bottom-14 right-0" width={120} height={120} />
+                    <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-14 right-0" width={120} height={120} />
                   </span>
                 </p>
 
