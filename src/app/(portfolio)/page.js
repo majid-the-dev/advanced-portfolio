@@ -56,8 +56,8 @@ export default function Home() {
         </div>
 
         <div className="flex-1 flex items-center justify-center h-full">
-          <div className="flex items-center justify-center relative h-full border-4 border-black p-2">
-            <Image src={'/avatar.jpeg'} alt="avatar" width={300} height={300} />
+          <div className="flex items-center justify-center relative h-full border-4 border-black p-2 rounded-md">
+            <Image src={'/avatar.jpeg'} className="rounded-md" alt="avatar" width={300} height={300} />
           </div>
         </div>
 
@@ -319,22 +319,22 @@ export default function Home() {
                 <div className="flex flex-col md:flex-row gap-4 md:gap-7 w-full">
                   <div className="flex flex-col w-full">
                     <label>Full Name </label>
-                    <input type="text" />
+                    <input type="text" className="contact-input" />
                   </div>
                   <div className="flex flex-col w-full">
                     <label>Email Address</label>
-                    <input type="email" />
+                    <input type="email" className="contact-input" />
                   </div>
                 </div>
 
                 <div className="flex flex-col">
                   <label>Subject</label>
-                  <input type="text" />
+                  <input type="text" className="contact-input" />
                 </div>
 
                 <div className="flex flex-col">
                   <label>Message</label>
-                  <textarea rows="5" cols=""></textarea>
+                  <textarea className="contact-input" rows="5" cols=""></textarea>
                 </div>
 
                 <div className="mt-3">

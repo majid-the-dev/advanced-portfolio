@@ -1,6 +1,6 @@
 import { Bai_Jamjuree } from 'next/font/google'
-import './globals.css'
-import Header from '@/components/Header'
+import '../globals.css'
+import BlogHeader from '@/components/BlogHeader'
 
 const bai = Bai_Jamjuree({ subsets: ['thai'], weight: ['200', '300', '400', '500', '600', '700'] })
 
@@ -11,12 +11,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className='scroll-smooth'>
+    <html lang="en" className='scroll-smooth bg-secondary'>
       <body className={bai.className}>
         <div className='fixed top-0 w-full z-20'>
-          <Header />
+          <BlogHeader />
         </div>
-        <main>
+        <main className='max-w-6xl mx-auto'>
           {children}  
         </main>
       </body>

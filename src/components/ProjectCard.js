@@ -7,14 +7,14 @@ import Link from "next/link";
 const ProjectCard = ({ id, image, heading, paragraph, tools, url, repo }) => {
 
     return (
-        <div className="bg-primary max-w-sm rounded-md shadow-md px-6 pt-5 pb-10">
-            <div className="relative h-44">
-                <Image src={'/avatar.jpeg'} alt="project-image" className="rounded-md" layout={'fill'} objectFit={'cover'} />
+        <div className="bg-primary w-full max-w-sm rounded-md shadow-md px-6 pt-5 pb-10">
+            <div className="relative h-44 shadow-sm">
+                <Image src={image} alt="project-image" className="rounded-md" layout={'fill'} objectFit={'cover'} />
             </div>
 
             <h1 className="font-bold text-lg mt-4">{heading}</h1>
 
-            <p className="mt-2 text-sm text-gray-500 leading-6">
+            <p className="mt-2 text-sm text-gray-500 leading-6 line-clamp-4">
                 {paragraph}
             </p>
 

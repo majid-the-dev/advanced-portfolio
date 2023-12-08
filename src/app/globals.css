@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   @apply bg-primary
-}
+} */
 
 .hero {
   @apply grid;
@@ -41,14 +41,12 @@ label {
   @apply text-sm mb-2
 }
 
-input, 
-textarea {
+.contact-input {
   @apply  bg-black outline-none ring-1 ring-gray-700 rounded-sm px-2 py-2
 }
 
-input:focus, 
-input:active, 
-textarea:focus {
+.contact-input:focus, 
+.contact-input:active {
   @apply  bg-black ring-1 ring-red-400 rounded-sm px-2 py-2
 }
 
@@ -75,4 +73,58 @@ textarea:focus {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-black/70
+}
+
+.category-tab {
+  @apply bg-primary border border-gray-400 shadow-sm rounded-full px-5 py-1
+}
+
+.category-tab:hover {
+  @apply bg-black text-primary transition-all;
+}
+
+section::-webkit-scrollbar {
+  display: none !important;
+}
+
+.login-input {
+  @apply bg-primary font-semibold border outline-none border-gray-400 rounded-md px-3 py-2
+}
+
+.login-input:focus,
+.login-input:active {
+  @apply outline-red-400/25
+}
+
+.admin-input {
+  @apply bg-primary font-semibold border outline-none border-gray-400 rounded-md px-3 py-2
+}
+
+.admin-input-label {
+  @apply text-gray-500 text-sm
+}
+
+.admin-input:active,
+.admin-input:focus {
+
+}
+
+.sidebar {
+  @apply sticky left-0 top-0 z-20 h-screen w-64 bg-black text-primary flex items-start justify-center py-5
+}
+
+.main-container {
+  @apply overflow-y-scroll bg-secondary w-full h-full px-6 py-6
+}
+
+.main-container::-webkit-scrollbar {
+  display: none !important;
+}
+
+.sidebar-menu {
+  @apply flex gap-2 px-6 py-3 hover:bg-red-400/25 rounded-md;
+}
+
+.sidebar-menu-active {
+  @apply flex gap-2 px-6 py-3 bg-red-400/25 rounded-md;
 }
