@@ -27,12 +27,12 @@ const ProjectCard = ({ id, image, heading, paragraph, tools, url, repo }) => {
             </div>
 
             <div className="flex items-center gap-5 mt-4">
-                <Link href={url} className="flex gap-1 items-center">
+                <Link href={url} target="_blank" className="flex gap-1 items-center">
                     <DesktopFill className="w-5 h-5 mt-0.5" />
                     <span className="text-sm">Demo</span>
                 </Link>
 
-                <Link href={repo} className="flex gap-1 items-center">
+                <Link href={repo} target="_blank" className="flex gap-1 items-center">
                     <CodeFill className="w-5 h-5 mt-0.5" />
                     <span className="text-sm">Repository</span>
                 </Link>

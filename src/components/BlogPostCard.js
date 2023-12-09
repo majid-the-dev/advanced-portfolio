@@ -26,14 +26,14 @@ const BlogPostCard = () => {
         <>
             {post?.length > 0 &&
                 post.map(post => (
-                    < div key={post._id} className="bg-primary w-full lg:max-w-xs rounded-md shadow-md px-5 py-5">
+                    < div key={post._id} className="bg-primary w-full max-w-sm lg:max-w-xs rounded-md shadow-md px-5 pt-5 pb-7">
                         <div className="flex flex-wrap gap-y-3 gap-x-2">
-                            <div className="inline-flex items-center px-3 py-0.5 text-sm rounded-full bg-red-400/25 whitespace-nowrap">
+                            <div className="inline-flex items-center px-3 py-0.5 text-xs rounded-full bg-red-400/25 whitespace-nowrap">
                                 {post.category}
                             </div>
                         </div>
 
-                        <div className="relative h-40 mt-3">
+                        <div className="relative h-40 mt-5">
                             <Image src={post.image} alt="project-image" className="rounded-md" layout={'fill'} objectFit={'cover'} />
                         </div>
 
@@ -44,13 +44,17 @@ const BlogPostCard = () => {
                         </div>
 
                         <div className="flex gap-1 items-center mt-1">
-                            <Link href={`/blog/${post._id}`} className="font-bold text-lg hover:underline underline-offset-2">{post.heading}</Link>
-                            <ExternalLink className="w-3 h-3" />
+                            <Link href={`/blog/${post._id}`} className="font-bold text-lg hover:underline underline-offset-2 leading-7 line-clamp-1">{post.heading}</Link>
                         </div>
 
                         <p className="text-sm text-gray-500 leading-6 line-clamp-4 mt-1">
                             {post.content}
                         </p>
+
+                        <div className="mt-4">
+                            <Link href={`/blog/${post._id}`} className="bg-black px-2 py-2 text-primary text-sm rounded-md">Read More</Link>
+                        </div>
+                        
                     </div >
                 ))
             }

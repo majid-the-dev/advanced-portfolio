@@ -2,15 +2,12 @@
 
 import RightArrow from "@/components/icons/RightArrow";
 import Link from "next/link";
-import { FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import { BiLogoInstagramAlt } from "react-icons/bi";
+import { FaLinkedinIn, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Code from "@/components/icons/Code";
 import Desktop from "@/components/icons/Desktop";
 import Backend from "@/components/icons/Backend";
 import ServiceCard from "@/components/ServiceCard";
 import Image from "next/image";
-import DesktopFill from "@/components/icons/DesktopFill";
-import CodeFill from "@/components/icons/CodeFill";
 import ProjectCard from "@/components/ProjectCard";
 import { projectData } from "@/data/projectData";
 import Send from "@/components/icons/Send";
@@ -63,16 +60,16 @@ export default function Home() {
 
         <div className="absolute-item absolute hidden lg:block">
           <div className="flex flex-col gap-5">
-            <Link href={'https://www.linkedin.com/in/majid-oladepo-gmcpn-017b06252/'} target="_blank" className="inline-flex ring-4 ring-red-400/25 bg-black text-white p-3 rounded-sm">
+            <Link href={'https://www.linkedin.com/in/majid-oladepo-gmcpn-017b06252/'} target="_blank" className="social-button">
               <FaLinkedinIn />
             </Link>
-            <Link href={'https://github.com/majid-the-dev'} target="_blank" className="inline-flex ring-4 ring-red-400/25 bg-black text-white p-3 rounded-sm">
+            <Link href={'https://github.com/majid-the-dev'} target="_blank" className="social-button">
               <FaGithub />
             </Link>
-            <Link href={'https://instagram.com/majid_creativebox?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr'} target="_blank" className="inline-flex ring-4 ring-red-400/25 bg-black text-white p-3 rounded-sm">
+            <Link href={'https://instagram.com/majid_creativebox?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr'} target="_blank" className="social-button">
               <FaInstagram />
             </Link>
-            <Link href={'https://wa.me/2347048505697'} target="_blank" className="inline-flex ring-4 ring-red-400/25 bg-black text-white p-3 rounded-sm">
+            <Link href={'https://wa.me/2347048505697'} target="_blank" className="social-button">
               <FaWhatsapp />
             </Link>
           </div>
@@ -251,7 +248,7 @@ export default function Home() {
           </div>
         </div> */}
 
-        <div className="max-w-7xl mx-auto flex flex-row items-center justify-center flex-wrap mt-12 gap-12">
+        <div className="max-w-7xl mx-auto flex flex-row items-stretch justify-center flex-wrap mt-12 gap-12">
           {projectData.map(card => (
             <ProjectCard key={card.id} {...card} />
           ))}
@@ -281,10 +278,10 @@ export default function Home() {
                     <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-20 right-0" width={120} height={120} />
                   </span>
                 </p>
-                <button type="button" className="button-primary rounded-md flex gap-2 items-center px-4 py-2 mt-6">
+                <Link href={'/blog'} target="_blank" className="button-primary rounded-md inline-flex gap-2 items-center px-4 py-2 mt-6">
                   Explore Blog
                   <RightArrow />
-                </button>
+                </Link>
               </div>
 
 
@@ -311,7 +308,7 @@ export default function Home() {
 
         <div className="flex justify-between flex-col gap-20 lg:gap-0 lg:flex-row items-center mt-6 lg:mt-10">
 
-          <div className="flex-1 flex items-center justify-center">
+          <div className="flex-1 flex items-center justify-center w-full">
             <div className="bg-black text-primary p-10 rounded-md max-lg:w-full">
               <h1 className="font-bold text-xl">Send Me a Message</h1>
 
@@ -338,7 +335,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-3">
-                  <button type="submit" className="bg-red-400 flex items-center justify-center gap-1 px-4 py-3 rounded-sm">
+                  <button type="submit" className="bg-secondary text-black flex items-center justify-center gap-1 px-4 py-3 rounded-sm">
                     <Send className="w-5 h-5 -rotate-45" />
                     <span>Send Message</span>
                   </button>
@@ -357,9 +354,9 @@ export default function Home() {
                   Excited about your <span className="font-bold">next big project</span> and ready to turn your ideas into reality? Reach out, let&apos;s start the <span className="font-bold">conversation</span>.
                   <br />
                   Based in Lagos, I&apos;m ready to collaborate <span className="font-bold">locally</span> or <span className="font-bold">virtually</span>, bringing a blend of creativity and technical expertise to every project.
-                  <span>
+                  {/* <span>
                     <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-14 right-0" width={120} height={120} />
-                  </span>
+                  </span> */}
                 </p>
 
                 <div className="mt-3">
@@ -371,22 +368,22 @@ export default function Home() {
                       majidoladepo@yahoo.com
                     </span>
                     <span className="mt-1">
-                      <RightArrow />
+                      {/* <RightArrow /> */}
                     </span>
                   </Link>
                 </div>
 
-                <div className="inline-flex gap-5 mt-8">
-                  <Link href={'https://www.linkedin.com/in/majid-oladepo-gmcpn-017b06252/'} target="_blank" className="inline-flex ring-4 ring-red-400/25 bg-black text-white p-3 rounded-sm">
+                <div className="inline-flex gap-3 mt-8">
+                  <Link href={'https://www.linkedin.com/in/majid-oladepo-gmcpn-017b06252/'} target="_blank" className="social-button">
                     <FaLinkedinIn />
                   </Link>
-                  <Link href={'https://github.com/majid-the-dev'} target="_blank" className="inline-flex ring-4 ring-red-400/25 bg-black text-white p-3 rounded-sm">
+                  <Link href={'https://github.com/majid-the-dev'} target="_blank" className="social-button">
                     <FaGithub />
                   </Link>
-                  <Link href={'https://instagram.com/majid_creativebox?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr'} target="_blank" className="inline-flex ring-4 ring-red-400/25 bg-black text-white p-3 rounded-sm">
+                  <Link href={'https://instagram.com/majid_creativebox?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr'} target="_blank" className="social-button">
                     <FaInstagram />
                   </Link>
-                  <Link href={'https://wa.me/2347048505697'} target="_blank" className="inline-flex ring-4 ring-red-400/25 bg-black text-white p-3 rounded-sm">
+                  <Link href={'https://wa.me/2347048505697'} target="_blank" className="social-button">
                     <FaWhatsapp />
                   </Link>
                 </div>
@@ -406,7 +403,7 @@ export default function Home() {
 
       </section>
 
-      <section className="bg-black text-primary mx-auto px-8 lg:px-20 py-10 relative flex flex-col md:flex-row items-center justify-between gap-4 scroll-m-10">
+      <section className="bg-black text-primary mx-auto px-8 lg:px-20 py-5 lg:py-7 relative flex flex-col md:flex-row items-center justify-between gap-3 scroll-m-10 text-sm">
         <div className="font-bold">
           <Link href={'/'}>{logo}</Link>
         </div>

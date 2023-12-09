@@ -56,7 +56,7 @@ const Header = () => {
         <button
           type="button"
           onClick={() => setMenuIsOpen(!menuIsOpen)}
-          className="md:hidden bg-black text-primary ring-4 ring-red-400/25 p-1 rounded-md cursor-pointer"
+          className="md:hidden bg-black text-primary p-1 rounded-md cursor-pointer"
         >
           {menuIsOpen ? <Close /> : <Menu />}
         </button>
@@ -78,7 +78,7 @@ const Header = () => {
         <div className="md:hidden">
           <div className="absolute flex flex-col items-center py-8 px-8 mt-2 space-y-6 bg-primary sm:w-auto sm:self-center right-6 left-6 drop-shadow-md">
             {sections.map((section) => (
-              <NavLink key={section.id} href={`#${section.id}`} active={activeSection === section.id}>
+              <NavLink key={section.id} href={`#${section.id}`} active={activeSection === section.id} onClick={() => setMenuIsOpen(false)}>
                 {section.label}
               </NavLink>
             ))}
@@ -86,6 +86,15 @@ const Header = () => {
               <span>Download Resume</span>
               <Download className="w-4 h-4" />
             </Link>
+            <div className="items-center gap-3 flex">
+              <div className="pulse">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p className="text-green-600 text-sm">Available for work</p>
+            </div>
           </div>
         </div>
       )}
@@ -93,10 +102,17 @@ const Header = () => {
   );
 };
 
-const NavLink = ({ href, active, children }) => {
+const NavLink = ({ href, active, children, onClick }) => {
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  }
+
   return (
     <Link href={href} className={`nav-link ${active ? 'active' : ''}`}>
-     {children}
+      {children}
     </Link>
   );
 };

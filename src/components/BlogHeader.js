@@ -4,53 +4,28 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Close from "./icons/Close";
-import Download from "./icons/Download";
 import Menu from "./icons/Menu";
 import Envelope from "./icons/Envelope";
+import { usePathname } from "next/navigation";
 
 const BlogHeader = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  // const [activeSection, setActiveSection] = useState("home");
+
+  const path = usePathname();
 
   const sections = [
-    { id: "home", label: "Discover" },
-    { id: "about", label: "Categories" },
-    { id: "projects", label: "Search" },
-    // { id: "blog", label: "Blog" },
-    // { id: "contact", label: "Contact" },
+    { label: "Discover", link: '/blog' },
+    { label: "Categories", link: '/blog/categories' },
+    { label: "Search" },
   ];
-
-  const handleScroll = () => {
-    const scrollPosition = window.scrollY;
-
-    sections.forEach((section) => {
-      const targetElement = document.getElementById(section.id);
-
-      if (targetElement) {
-        const sectionTop = targetElement.offsetTop - 50;
-        const sectionBottom = sectionTop + targetElement.clientHeight;
-
-        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-          setActiveSection(section.id);
-        }
-      }
-    });
-  };
-
-  useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  });
 
   const logo = 'BLOG';
 
   return (
     <header className="bg-primary shadow-md relative">
-      <nav className="max-w-6xl mx-auto flex items-center justify-between py-6">
-        <Link href={'/'} className="text-lg font-extrabold">
+      <nav className="max-w-6xl mx-auto flex items-center justify-between py-6 px-6">
+        <Link href={'/blog'} className="text-lg font-extrabold">
           {logo}
         </Link>
 
@@ -63,11 +38,9 @@ const BlogHeader = () => {
         </button>
 
         <div className="hidden md:flex items-center gap-9 text-sm">
-          {sections.map((section) => (
-            <NavLink key={section.id} href={`#${section.id}`} active={activeSection === section.id}>
-              {section.label}
-            </NavLink>
-          ))}
+          <Link href={'/blog'} className={path === '/blog' ? 'active' : ''}>Discover</Link>
+          <Link href={'/blog/categories'} className={path === '/blog/categories' ? 'active' : ''}>Categories</Link>
+          <button type="button">Search</button>
           <Link href={'/'} className="button-primary flex items-center gap-2 px-4 py-3 rounded-md">
             <span>Subscribe</span>
             <Envelope className="w-4 h-4" />
@@ -78,14 +51,12 @@ const BlogHeader = () => {
       {menuIsOpen && (
         <div className="md:hidden">
           <div className="absolute flex flex-col items-center py-8 px-8 mt-2 space-y-6 bg-primary sm:w-auto sm:self-center right-6 left-6 drop-shadow-md">
-            {sections.map((section) => (
-              <NavLink key={section.id} href={`#${section.id}`} active={activeSection === section.id}>
-                {section.label}
-              </NavLink>
-            ))}
+            <Link href={'/blog'} className={path === '/blog' ? 'active' : ''}>Discover</Link>
+            <Link href={'/blog/categories'} className={path === '/blog/categories' ? 'active' : ''}>Categories</Link>
+            <button type="button">Search</button>
             <Link href={'/'} className="button-primary flex items-center gap-2 px-4 py-3 rounded-md">
-              <span>Download Resume</span>
-              <Download className="w-4 h-4" />
+              <span>Subscribe</span>
+              <Envelope className="w-4 h-4" />
             </Link>
           </div>
         </div>
@@ -97,7 +68,7 @@ const BlogHeader = () => {
 const NavLink = ({ href, active, children }) => {
   return (
     <Link href={href} className={`nav-link ${active ? 'active' : ''}`}>
-     {children}
+      {children}
     </Link>
   );
 };

@@ -3,12 +3,12 @@ export const projectData  = [
         id: 1,
         image: '/pizza-ordering.png',
         heading: 'Pizza Ordering App',
-        paragraph: 'Revolutionizing pizza order experience with this application. Admins can set up categories and menu items, and track real-time orders. Users can register and select from a wide range of delightful menu options. ',
+        paragraph: 'Revolutionizing pizza order experience. Admins can set up categories, menu items, and track real-time orders. Users can register and select from a wide range of delightful menu options. ',
         tools: [
             'React', 'Next', 'Tailwind CSS', 'Mongo DB'
         ],
-        url: '',
-        repo: ''
+        url: 'https://github.com/majid-the-dev/pizza-ordering-application',
+        repo: 'https://github.com/majid-the-dev/pizza-ordering-application'
     },
     {
         id: 2,
@@ -18,8 +18,8 @@ export const projectData  = [
         tools: [
             'React', 'Next', 'TypeScript', 'Tailwind CSS', 'Mongo DB'
         ],
-        url: '',
-        repo: ''
+        url: 'https://github.com/majid-the-dev/threads-clone',
+        repo: 'https://github.com/majid-the-dev/threads-clone'
     },
     {
         id: 3,
@@ -29,8 +29,8 @@ export const projectData  = [
         tools: [
             'React', 'Tailwind CSS', 'Node', 'Express', 'Mongo DB'
         ],
-        url: '',
-        repo: ''
+        url: 'https://github.com/majid-the-dev/Airbnb-clone',
+        repo: 'https://github.com/majid-the-dev/Airbnb-clone'
     },
     {
         id: 4,
@@ -40,8 +40,8 @@ export const projectData  = [
         tools: [
             'React', 'Tailwind CSS', 'Node', 'Express', 'Mongo DB'
         ],
-        url: '',
-        repo: ''
+        url: 'https://github.com/majid-the-dev/car-rental-application',
+        repo: 'https://github.com/majid-the-dev/car-rental-application'
     },
     {
         id: 5,
@@ -51,8 +51,8 @@ export const projectData  = [
         tools: [
             'React', 'Next', 'Tailwind CSS', 'Mongo DB'
         ],
-        url: '',
-        repo: ''
+        url: 'https://github.com/majid-the-dev/advanced-portfolio',
+        repo: 'https://github.com/majid-the-dev/advanced-portfolio'
     },
     {
         id: 6,
@@ -62,7 +62,7 @@ export const projectData  = [
         tools: [
             'React', 'CSS',
         ],
-        url: '',
-        repo: ''
+        url: 'https://github.com/majid-the-dev/tenzies',
+        repo: 'https://github.com/majid-the-dev/tenzies'
     },
 ]

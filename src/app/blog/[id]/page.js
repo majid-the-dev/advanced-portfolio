@@ -40,11 +40,11 @@ const PostPage = () => {
     };
 
     return (
-        <main className="mt-32 pb-10">
+        <main className="mt-32 pb-10 px-6">
             {post &&
                 <>
-                    <div className="grid grid-cols-3">
-                        <div className="col-span-2">
+                    <div className="flex lg:grid grid-cols-3">
+                        <div className="lg:col-span-2">
                             <div className="inline-flex items-center px-3 py-0.5 text-sm rounded-full bg-red-400/25 whitespace-nowrap mb-6">
                                 {post?.category}
                             </div>
@@ -58,8 +58,8 @@ const PostPage = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-12">
-                        <div className="col-span-2">
+                    <div className="flex flex-col lg:grid grid-cols-3 gap-12">
+                        <div className="lg:col-span-2">
                             <div className="relative h-80 w-full rounded-md mt-10">
                                 <Image src={post?.image} className="rounded-md" alt="post-image" layout={'fill'} objectFit={'cover'} />
                             </div>
@@ -70,18 +70,18 @@ const PostPage = () => {
 
                         <div className="col-span-1">
                             <div className="mt-6">
-                                <h1 className="font-bold text-2xl py-2">Recent Posts</h1>
+                                <h1 className="font-bold text-2xl py-2 mb-2">Recent Posts</h1>
                                 {allPosts?.length > 0 &&
                                     allPosts.map(posts => (
-                                        <div key={posts._id} className="px-3 py-2 flex flex-col gap-1 items-start justify-center bg-primary mb-3 rounded-md">
-                                            <h1 className="font-semibold">
-                                                <Link href={`/blog/${posts._id}`}>{posts.heading} </Link>
-                                                <span><ExternalLink className="w-3 h-3" /></span>
-                                            </h1>
-                                            <div className="inline-flex items-center px-3 py-0.5 text-xs rounded-full bg-red-400/25 whitespace-nowrap">
-                                                {posts.category}
+                                        <div key={posts._id} className="px-3 py-3 flex flex-col gap-1 bg-primary mb-4 rounded-md">
+                                            <Link href={`/blog/${posts._id}`} className="font-semibold hover:underline">{posts.heading} </Link>
+                                            <div className="flex items-center gap-2 text-gray-500 text-xs">
+                                                <p>{posts.category}</p>
+                                                <p>|</p>
+                                                <p>3 min read</p>
+                                                <p>|</p>
+                                                <p>{convertDate(posts.createdAt)}</p>
                                             </div>
-                                            <p className="text-gray-500 text-xs">{convertDate(posts.createdAt)}</p>
                                         </div>
                                     ))
                                 }

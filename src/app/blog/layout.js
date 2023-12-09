@@ -1,6 +1,7 @@
 import { Bai_Jamjuree } from 'next/font/google'
 import '../globals.css'
 import BlogHeader from '@/components/BlogHeader'
+import BlogFooter from '@/components/BlogFooter'
 
 const bai = Bai_Jamjuree({ subsets: ['thai'], weight: ['200', '300', '400', '500', '600', '700'] })
 
@@ -17,8 +18,11 @@ export default function RootLayout({ children }) {
           <BlogHeader />
         </div>
         <main className='max-w-6xl mx-auto'>
-          {children}  
+          {children}
         </main>
+        <div className='max-w-6xl mx-auto'>
+          <BlogFooter />
+        </div>
       </body>
     </html>
   )
