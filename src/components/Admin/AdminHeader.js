@@ -28,7 +28,7 @@ const AdminHeader = () => {
                 </button>
                 <button type="button" onClick={() => setIsLogout(!isLogout)} className="flex gap-2 items-center cursor-pointer relative">
                     Admin
-                    <Image src={'/avatar.jpeg'} className="rounded-full" width={28} height={28} />
+                    <Image src={'/avatar.jpeg'} alt="admin-avatar" className="rounded-full" width={28} height={28} />
                     {isLogout &&
                         <button type="button" className="absolute flex items-center gap-2 bg-secondary shadow-md px-4 py-3 top-9 right-0">
                             <span><Logout className="w-5 h-5" /></span>

@@ -48,7 +48,7 @@ const AdminBlogCard = () => {
         <>
         {posts?.length > 0 ?
             posts.map(post => (
-                <div className="bg-primary flex w-full gap-3 rounded-md shadow-md p-4">
+                <div key={post._id} className="bg-primary flex w-full gap-3 rounded-md shadow-md p-4">
                     <div className="relative w-32 h-20">
                         <Image src={post.image} alt="post-image" layout={'fill'} objectFit={'cover'} />
                     </div>

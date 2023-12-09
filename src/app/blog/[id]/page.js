@@ -22,7 +22,7 @@ const PostPage = () => {
                 setPost(p);
             });
         });
-    }, []);
+    }, [id]);
 
     useEffect(() => {
         fetch('/api/posts').then(response => {
@@ -73,7 +73,7 @@ const PostPage = () => {
                                 <h1 className="font-bold text-2xl py-2">Recent Posts</h1>
                                 {allPosts?.length > 0 &&
                                     allPosts.map(posts => (
-                                        <div className="px-3 py-2 flex flex-col gap-1 items-start justify-center bg-primary mb-3 rounded-md">
+                                        <div key={posts._id} className="px-3 py-2 flex flex-col gap-1 items-start justify-center bg-primary mb-3 rounded-md">
                                             <h1 className="font-semibold">
                                                 <Link href={`/blog/${posts._id}`}>{posts.heading} </Link>
                                                 <span><ExternalLink className="w-3 h-3" /></span>

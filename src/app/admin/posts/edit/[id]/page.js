@@ -16,7 +16,7 @@ const EditPostPage = () => {
         setPost(post);
       })
     })
-  }, []);
+  }, [id]);
 
   return (
     <div>

@@ -50,7 +50,7 @@ const AdminCategoryCard = ({ setName, setEditCategory }) => {
         <>
             {categories?.length > 0 ?
                 categories.map(category => (
-                    <div className="bg-primary flex items-center justify-between px-5 py-2 rounded-full">
+                    <div key={category._id} className="bg-primary flex items-center justify-between px-5 py-2 rounded-full">
                         <h1 className="">{category.name}</h1>
                         <div className="flex gap-2">
                             {path !== '/admin' &&
