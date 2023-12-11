@@ -67,7 +67,7 @@ const Header = () => {
               {section.label}
             </NavLink>
           ))}
-          <Link href={'/'} className="button-primary flex items-center gap-2 px-4 py-3 rounded-md">
+          <Link href={'/majid-oladepo-software-developer.pdf'} target="_blank" className="button-primary flex items-center gap-2 px-4 py-3 rounded-md">
             <span>Resume</span>
             <Download className="w-4 h-4" />
           </Link>
@@ -82,7 +82,7 @@ const Header = () => {
                 {section.label}
               </NavLink>
             ))}
-            <Link href={'/'} className="button-primary flex items-center gap-2 px-4 py-3 rounded-md">
+            <Link href={'/majid-oladepo-software-developer.pdf'} target="_blank" className="button-primary flex items-center gap-2 px-4 py-3 rounded-md">
               <span>Download Resume</span>
               <Download className="w-4 h-4" />
             </Link>
