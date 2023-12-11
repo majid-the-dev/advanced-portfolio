@@ -99,7 +99,7 @@ export default function Home() {
                 <p className="leading-9 max-w-lg relative">
                   With <span className="font-bold">2 years</span> of experience, my journey into the world of software development started when I realized how much I loved tinkering with code to solve <span className="font-bold">real-world problems</span>. When I&apos;m not coding, you can usually find me exploring for new experiences and perspectives that can inform my work and help me grow both personally and professionally.
                   <span>
-                    <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-20 right-0" width={120} height={120} />
+                    <Image src={'/Vector-6.png'} alt="vector" className="hidden lg:block absolute -bottom-20 right-0" width={120} height={120} />
                   </span>
                 </p>
                 <button type="button" onClick={() => setShowModal(true)} className="button-primary rounded-md flex gap-2 items-center px-4 py-2 mt-6">
@@ -275,7 +275,7 @@ export default function Home() {
                 <p className="leading-9 max-w-lg relative">
                   I share my <span className="font-bold">insights</span> and <span className="font-bold">experiences</span> as a software developer, as well as <span className="font-bold">tips</span> and <span className="font-bold">tutorials</span> for those who are just starting out in the field. I&apos;m excited to share knowledge and contribute my own perspectives to the conversation.
                   <span>
-                    <Image src={'/Vector-6.png'} alt="vector" className="absolute -bottom-20 right-0" width={120} height={120} />
+                    <Image src={'/Vector-6.png'} alt="vector" className="hidden md:block absolute -bottom-20 right-0" width={120} height={120} />
                   </span>
                 </p>
                 <Link href={'/blog'} target="_blank" className="button-primary rounded-md inline-flex gap-2 items-center px-4 py-2 mt-6">
@@ -335,7 +335,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-3">
-                  <button type="submit" className="bg-secondary text-black flex items-center justify-center gap-1 px-4 py-3 rounded-sm">
+                  <button type="submit" className="bg-primary text-black flex items-center justify-center gap-1 px-4 py-3 rounded-sm">
                     <Send className="w-5 h-5 -rotate-45" />
                     <span>Send Message</span>
                   </button>

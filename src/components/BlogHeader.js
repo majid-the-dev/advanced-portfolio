@@ -25,9 +25,10 @@ const BlogHeader = () => {
   return (
     <header className="bg-primary shadow-md relative">
       <nav className="max-w-6xl mx-auto flex items-center justify-between py-6 px-6">
-        <Link href={'/blog'} className="text-lg font-extrabold">
-          {logo}
-        </Link>
+        <div className="relative inline-flex">
+          <Link href={'/blog'} className="text-lg font-extrabold">{logo}</Link>
+          <div className="absolute top-0 -right-2 h-6 w-8 bg-red-400/25"></div>
+        </div>
 
         <button
           type="button"
